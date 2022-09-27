@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="">
+    <link href="/dist/output.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="join-container flex flex-col min-h-screen justify-center items-center">
+    <main class="join-main flex-col content-center bg-gray-100 p-3">
+      <h1 class="text-primary-color text-2xl text-center">Chat</h1>
+      <form action="chat.html">
+        <div class="form pt-4 flex flex-col">
+          <label for="username" class="text-lg">Username</label>
+          <input
+            class="pl-1 border-2"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter username..."
+            required
+          />
+        </div>
+        <div class="form flex pt-2 flex-col">
+          <label for="room" class="text-lg">Room</label>
+          <select name="room" id="room" class="border-2 p-0.5">
+            <option value="Room 1">First room</option>
+            <option value="Room 2">Second room</option>
+          </select>
+        </div>
+        <button type="submit" class="bt p-2 ml-auto mr-auto mt-4 flex justify-center rounded-full text-white bg-primary-color hover:bg-primary-light">Join Chat</button>
+      </form>
+    </main>
+  </div>
+  </body>
+</html>
